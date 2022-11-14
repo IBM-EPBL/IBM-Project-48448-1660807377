@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div>
+        <div class="container">
+          <!-- For demo purpose -->
+          <div class="row mb-5 text-center text-white">
+            <div class="col-lg-10 mx-auto">
+              <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);""><b></b></h1>
+            </div>
+          </div>
+          <center>
+          
+      
+                  
+      
+              
+            
+                    
+                  
+	{% if prediction==0 %}
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 30%;">
+  <img src="{{img_path}}" height=350 width=350 >
+	<h2> <i> Pepper bell Bacterial_spot 🍂</i></h2>
+    <div class="row">
+        <div class="col mx-auto">
+          <div class="p-5 bg-white shadow rounded-lg" style="height:95%">
+            Oopps!! Your pepper plant is infected by Bacterial Leaft Spot. The disease cycle can be stopped by using the Sango formula for disinfectants. Bleach treatment and hot water treatment is also helpful.
+
+	{% endif %}
+  
+    {% if prediction==1 %}
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 30%;">
+  <img src="{{img_path}}" height=350 width=350 >
+	<h2> <i> Pepper bell healthy 🍂</i></h2>
+    <div class="row">
+        <div class="col mx-auto">
+          <div class="p-5 bg-white shadow rounded-lg" style="height:95%">
+            Yaayy!! Your pepper plant is healthy. But, take the necessary precautions like, putting the plant where it gets at least 10 hours of direct sunlight. Keep soil evenly moist for good growth. Peppers need well draining soil that is rich and loamy, but avoid too much nitrogen in the soil. Too much nitrogen can cause plenty of leaves and little to no peppers. Your soil should have a pH between 6.0 and 6.5.
+
+	{% endif %}
+
+    {% if prediction==2 %}
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 30%;">
+  <img src="{{img_path}}" height=350 width=350 >
+	<h2> <i> Potato Early blight 🍂</i></h2>
+    <div class="row">
+        <div class="col mx-auto">
+          <div class="p-5 bg-white shadow rounded-lg" style="height:95%">
+            Oopps!! Your potato plant is Early Blight. Avoid irrigation in cool cloudy weather and time irrigation to allow plants time to dry before nightfall. Protectant fungicides (e.g. maneb, mancozeb, chlorothalonil, and triphenyl tin hydroxide) are effective. 
+
+	{% endif %}
+   
+ 
+    {% if prediction==3 %}
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 30%;">
+  <img src="{{img_path}}" height=350 width=350 >
+	<h2> <i> Potato___healthy 🍂</i></h2>
+    <div class="row">
+        <div class="col mx-auto">
+          <div class="p-5 bg-white shadow rounded-lg" style="height:95%">
+            Yaayy!! Your potato plant is healthy. But, take the necessary precautions like, putting the plant where it gets at least 10 hours of direct sunlight. Potatoes do best in well-drained and fertile soil. Maintain the pH between 5.0 and 5.5. Keep soil evenly moist for good growth. Do not add large amounts of organic matter to the soil as it may contribute to potato scab, a disease that frequently infects potatoes. 
+
+
+	{% endif %}
+  
+    {% if prediction==4 %}
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 30%;">
+  <img src="{{img_path}}" height=350 width=350 >
+	<h2> <i> Potato Late blight 🍂</i></h2>
+    <div class="row">
+        <div class="col mx-auto">
+          <div class="p-5 bg-white shadow rounded-lg" style="height:95%">
+            Oopps!! Your potato plant is Late Blight. The late blight can be effectively managed with prophylactic spray of mancozeb, cymoxanil+mancozeb or dimethomorph+mancozeb.
+
+
+	{% endif %}
+  
+    {% if prediction==5 %}
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 30%;">
+  <img src="{{img_path}}" height=350 width=350 >
+	<h2> <i> Tomato Bacterial spot 🍂</i></h2>
+    <div class="row">
+        <div class="col mx-auto">
+          <div class="p-5 bg-white shadow rounded-lg" style="height:95%">
+            Oopps!! Your tomato plant is effected by bacterial spots. To protect the uninfected plants remove the infected leaves and bury or burn them s there is no cure for this infection. To prevent future infections plant pathogen-free seeds or transplants to prevent the introduction of bacterial spot pathogens on contaminated seed or seedlings.
+
+
+	{% endif %}
+
+  {% if prediction==6 %}
+  <div class=" col">
+      <div class="p-3 bg-white shadow rounded-lg" style="width: 30%;">
+<img src="{{img_path}}" height=350 width=350 >
+<h2> <i>  Tomato Late blight 🍂</i></h2>
+  <div class="row">
+      <div class="col mx-auto">
+        <div class="p-5 bg-white shadow rounded-lg" style="height:95%">
+          Oopps!! Your tomato plant is late blight. Early treatment for this disease is needed. Fungicides like e Daconil fungicides from GardenTech brand prevent, stop, and control late blight and more than 65 types of fungal disease. Planting resistant cultivars and watering the plants early in the mornings help to prevent this infection.
+
+
+{% endif %}
+  
+{% if prediction==7 %}
+  <div class=" col">
+      <div class="p-3 bg-white shadow rounded-lg" style="width: 30%;">
+<img src="{{img_path}}" height=350 width=350 >
+<h2> <i>  Tomato Leaf Mold 🍂</i></h2>
+  <div class="row">
+      <div class="col mx-auto">
+        <div class="p-5 bg-white shadow rounded-lg" style="height:95%">
+          Oopps!! Your tomato plant has leaf molds. Watering the plants early in the mornings help them to get sufficient time to dry out. Fungicidal sprays mostly calcium chloride based sparys help in getting rid of leaf molds.
+
+
+{% endif %}
+  
+{% if prediction==8 %}
+  <div class=" col">
+      <div class="p-3 bg-white shadow rounded-lg" style="width: 30%;">
+<img src="{{img_path}}" height=350 width=350 >
+<h2> <i>  Tomato Septoria leaf spot 🍂</i></h2>
+  <div class="row">
+      <div class="col mx-auto">
+        <div class="p-5 bg-white shadow rounded-lg" style="height:95%">
+          Oopps!! Your tomato plant is infected by Septoria leaf spot. Removing the infected leaves immediately will curb the spread of infection. Organic and chemical fungicides with chlorothalonil are effective in treatment.
+
+
+{% endif %}
+  
+ 
+</div>
+
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
